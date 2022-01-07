@@ -3,7 +3,7 @@
 █▄▄ █▄█ █▄▄ ░█░ █▄█ █▀▄ ██▄   █░▀░█ ██▄
 ```
 
-#Summary (Coming Soong)
+#Summary (Coming Soon)
 
 ---
 

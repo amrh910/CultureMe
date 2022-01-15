@@ -1,32 +1,40 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { Card } from "@paraboly/react-native-card";
 import Flag from 'react-native-flags';
+import { useState, useEffect } from 'react';
 
-const HolidayCard = () => {
+export const HolidayCard = ({ ccode, hname }) => {
+    const [ country, setCountry ] = useState();
+    const [ name, setName ] = useState();
+    
+    useEffect(() => {
+        setCountry(ccode);
+        setName(hname);
+    }, [ccode, hname]);
+    
     return(
-        <Card
-            //need to put flag icon
-            // iconDisable
-            icon={<Flag code="DE" size={32}/>}
-            // iconName="DE"
-            // iconType="Flag"
-            // iconColor={'white'}
-            iconBackgroundColor={'#384660'}
-            title="Title"
-            description="Main Content"
-            bottomRightText="30"
-            topRightText="Top Right"
-            topRightTextStyle={{color: 'white'}}
-            bottomRightText="Bottom Right"
-            bottomRightTextStyle={{color: 'white'}}
-            description="Short Description"
-            style={styles.card}
-            onPress={() => {}}
-        />
+            <Card
+                iconDisable
+                iconBackgroundColor={'#384660'}
+                title={name}
+                description="Main Content"
+                bottomRightText="30"
+                topRightText="Top Right"
+                topRightTextStyle={{color: 'white'}}
+                bottomRightText={<Flag
+                    code={country}
+                    size={24}
+                />}
+                bottomRightTextStyle={{color: 'white'}}
+                description="Short Description"
+                style={styles.card}
+                onPress={() => {}}
+                setName={setName}
+                setCountry={setCountry}
+            />
+        // }
     );
 }
-
-export default HolidayCard;
 
 const styles = StyleSheet.create({
     card: {

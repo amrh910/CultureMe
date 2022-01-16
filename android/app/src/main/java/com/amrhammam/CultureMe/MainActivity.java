@@ -1,4 +1,4 @@
-package com.amrdrensys.CultureMe;
+package com.amrhammam.CultureMe;
 import android.content.res.Configuration;
 import android.content.Intent;
 

@@ -18,14 +18,14 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.amrdrensys.CultureMe"
+      "bundleIdentifier": "com.amrhammam.CultureMe"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.amrdrensys.CultureMe"
+      "package": "com.amrhammam.CultureMe"
     },
     "web": {
       "favicon": "./assets/favicon.png"

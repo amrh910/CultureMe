@@ -19,11 +19,11 @@ export const HolidayCard = ({ holiday }) => {
                     iconDisable
                     iconBackgroundColor={'#384660'}
                     title={name}
-                    titleTextStyle={{width: '100%'}}
+                    titleTextStyle={{width: '100%', color: '#616161'}}
                     description="Main Content"
                     bottomRightText="30"
                     topRightText={country.length}
-                    topRightTextStyle={{color: 'white'}}
+                    topRightTextStyle={{color: '#767676'}}
                     bottomRightText={
                         country.map((flag) => {
                             return (
@@ -37,7 +37,7 @@ export const HolidayCard = ({ holiday }) => {
                     bottomRightTextStyle={{color: 'white'}}
                     description=""
                     style={styles.card}
-                    shadowStyle={{shadowColor: 'black'}}
+                    // shadowStyle={{shadowColor: 'white'}}
                     onPress={() => {}}
                 />
             }
@@ -47,7 +47,7 @@ export const HolidayCard = ({ holiday }) => {
 
 const styles = StyleSheet.create({
     card: {
-        backgroundColor: '#1b2a46',
+        backgroundColor: 'white',
         marginBottom: 10
     }
 });
